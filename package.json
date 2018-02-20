@@ -1,0 +1,29 @@
+{
+  "name": "malang",
+  "version": "0.0.1",
+  "description": "Test",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codenoid/test.git"
+  },
+  "keywords": [
+    "maps",
+    "es6"
+  ],
+  "author": "Rubi Jihantoro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/codenoid/test/issues"
+  },
+  "homepage": "https://github.com/codenoid/test#readme",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "gmaps": "^0.4.24",
+    "gulp": "^3.9.1"
+  }
+}
