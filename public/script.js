@@ -30,7 +30,7 @@ $(document).ready(function() {
             content: 'Tujuan'
         }
     });
-    
+
 });
 
 function calculate() {
@@ -48,7 +48,7 @@ function calculate() {
         type: 'GET',
         dataType: 'json',
         success: (result) => {
-            $('b#distance').html(result.distance + "KM COST : Rp." + result.cost + " SHARE : Rp." + result.share)
+            $('b#distance').html(result.distance + "KM - COST : Rp." + result.cost + " - SHARE : Rp." + result.share)
         }
     });
 }
