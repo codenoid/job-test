@@ -2,6 +2,8 @@
 
 Calculate Cost for shopping (GO-MART ?)
 
+![Madeliv Screenshot](https://raw.githubusercontent.com/codenoid/test/madeliv/madeliv.png)
+
 ## Usage
 
 ```shell
