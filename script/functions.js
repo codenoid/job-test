@@ -12,6 +12,7 @@ module.exports = {
             cost = cost * km,
             rush = time >= 16 && time <= 19 ? 3000 : 0,
             cost = cost + rush,
+            cost = km > 1 ? cost += 4000 : cost,
             shop = this.shopCost(price),
             cost = cost + shop,
             share = this.tenPercent(cost)
