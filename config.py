@@ -30,6 +30,6 @@ do not serve static file, because API doesn't need that
 """
 app = Flask(__name__, static_folder=None)
 
-
+# :nodoc:
 UPLOAD_FOLDER = './upload'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER

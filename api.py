@@ -113,6 +113,10 @@ def _videos():
 	status = {"status": "success", "code": 200, "msg": "successfully uploaded"}
 	return make_response(jsonify(status), 200)
 
+"""
+custom 404 page, represented as json return type, with status_code 404
+and message : requested url not found
+"""
 @app.errorhandler(404)
 def page_not_found(e):
 	status = {"status": "failed", "code": 404, "msg": "requested url not found"}
