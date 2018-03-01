@@ -44,7 +44,7 @@ expected type is Int, found type : String & Int for param : video_id
 """
 def validation(fields, post):
 	error = []
-	for k, v in post.iteritems():
+	for k, v in post.items():
 		"""
 		`next` if the key is `video_file`, because this is not for File validation
 		but text-only validation
@@ -58,7 +58,7 @@ def validation(fields, post):
 		"""
 		if k in fields:
 			if fields[k] == "str":
-				if v.isalnum() or isinstance(v, basestring):
+				if v.isalnum() or isinstance(v, str):
 					next
 				else:
 					err = "expected type is String, found type : " + typeof(v) + " for param : " + k
@@ -118,7 +118,7 @@ def typeof(text):
 		return "String & Int"
 	elif text.isdigit():
 		return "Int"
-	elif text.isalpha() or isinstance(text, basestring):
+	elif text.isalpha() or isinstance(text, str):
 		return "String"
 	else:
 		return text

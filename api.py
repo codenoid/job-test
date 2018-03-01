@@ -17,7 +17,7 @@ def _videos():
 	fields = {"video_id": 1, "video_author": "str", "video_title": "str", "video_desc": "str"}
 
 	post = {}
-	for k, v in request.form.iteritems():
+	for k, v in request.form.items():
 		post[k] = v
 
 	"""
